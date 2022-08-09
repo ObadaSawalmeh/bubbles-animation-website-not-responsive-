@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+}
+.hero {
+    width: 100%;
+    height:100vh;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height:15%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color:#fbfcfd;
+    padding:7px 45px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: solid 1px #fff;
+}
+.content{
+    color:#fbfcfd;
+    position: absolute;
+    top:30%;
+    left:8%;
+    z-index: 2;
+}
+h1{
+    color: white;
+    font-size: 80px;
+    margin:10px 0 30px;
+    line-height: 80px;
+}
+h2{
+    font-size: 32px;
+}
+.sidebar{
+    z-index: 2;
+    width:50px;
+    height:100vh;
+    background:linear-gradient(#00545d,#000729);
+    position: absolute;
+    right:0;
+    top:0;
+}
+.sidebar .menu{
+    position: absolute;
+    top:5%;
+    left:10%;
+    width:25px;
+    margin:0 auto;
+    position: absolute;
+    left:25%;
+    cursor: pointer;
+}
+.sidebar .icon{
+    width:25px;
+}
+.sociallinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width:40px;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.sociallinks img{
+    margin:5px 0px;
+    width: 35px;
+}
+.usefullinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width:35px;
+    cursor: pointer;
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.usefullinks img{
+    margin:5px 0px;
+    z-index: -1;
+}
+.bubbles img:nth-child(1){
+    position: absolute;
+    bottom:-70px;
+    left:10%;
+    width:50px;
+    animation: bubble 7s linear infinite;
+    animation-delay: 2s;
+}
+
+.bubbles img:nth-child(2){
+    position: absolute;
+    bottom:-70px;
+    left:18%;
+    width:40px;
+    animation-delay: 1s;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles img:nth-child(3){
+    position: absolute;
+    bottom:-70px;
+    left:25%;
+    width:40px;
+    animation-delay: 2s;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles img:nth-child(4){
+    position: absolute;
+    bottom:-50px;    left:55%;
+    width:60px;
+    animation-delay: 2s;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles img:nth-child(5){
+    position: absolute;
+    bottom:-20px;    lefT:57%;
+    width:40px;
+    animation-delay: .5s;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles img:nth-child(6){
+    position: absolute;
+    bottom:5%;
+    width:30px;
+    bottom:-70px;
+    animation-delay: 1s;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles img:nth-child(7){
+    position: absolute;
+    bottom:20%;
+    width:40px;
+    bottom:-25px;
+    animation-delay: 3s;
+    animation: bubble 7s linear infinite;
+}
+.bubbles img:nth-child(8){
+    position: absolute;
+    bottom:2%;
+    right:17%;
+    width:30px;
+    bottom:-70px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles img:nth-child(9){
+    position: absolute;
+    bottom:32%;
+    right:8%;
+    bottom:-10px;
+    width:20px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles img:nth-child(10){
+    position: absolute;
+    bottom:22%;
+    right:5%;
+    width:50px;
+    animation-delay: 2s;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index:1;
+}
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: .7;
+    }
+    70%{
+        opacity: .4;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
